@@ -3,6 +3,10 @@
 ## Description
 VMwareInfoExporter is a C# program designed to fetch and export Virtual Machine (VM) information from a vCenter or an ESXi host to a CSV file. The exported information includes VM name, IP address, Guest OS, and any notes associated with the VM.
 
+## Comparison with PowerShell Version
+
+VMwareInfoExporter is designed as a counterpart to the PowerShell version [Export-VMInfo.ps1](https://github.com/virtualox/Export-VMInfo.ps1). Unlike the PowerShell version, this C# version does not require the PowerCLI PowerShell modules, making it a standalone solution for extracting and exporting VM information. This characteristic may provide an easier setup and usage experience for individuals or environments where PowerCLI is not already installed or its installation is not preferred.
+
 ## Dependencies
 This program relies on the following DLLs from VMware which can be obtained [here](https://www.powershellgallery.com/packages/VMware.Vim/):
 
